@@ -13,17 +13,6 @@
                  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link rel="stylesheet" href="css/style.css">
  
-     
-    
-   
-    
- 
-
-           
-             
-              
-       
-    
   
         <link rel="stylesheet" href="css/style.css">
 </head>
@@ -83,7 +72,7 @@ if(session.getAttribute("ids")==null){
         </li>
                 
                 <li class="nav-item">
-              <a class="nav-link active"  href="FinalBookings.jsp">Final Booking</a>
+              <a class="nav-link active"  href="#">Final Booking</a>
               
                 </li>
                 
@@ -107,20 +96,7 @@ if(session.getAttribute("ids")==null){
         
         </header>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-   
-
+    
 <section>
 <div class="container-fluid ml-lg-5 ml-md-5 ml-0 ml-sm-0">
 <div class="row">
@@ -155,7 +131,7 @@ if(session.getAttribute("ids")==null){
 
     <div class="form-group ">
            
-          <input type="text"   class=" form-control totalflighttimefinal text-right "  value= "<%= request.getParameter("totaltime")%>" id="totaltime4" name="totaltime"  style="width:10%; height:1.8rem;" >
+          <input type="text"   class=" form-control totalflighttimefinal text-right "  value= "<%= request.getParameter("totaltime")%>" id="totaltime4" name="totaltime"  style="max-width:10%; max-height:1.8rem;" >
              
 
              
@@ -354,15 +330,15 @@ if(session.getAttribute("ids")==null){
  %>
           
               
-                  <input type="text" id="airlinelable"  class="form-control finalfontstyling text-center ml-0 pl-0 " value="${param.airlinename}" name="airlinename" readonly="readonly" style="width:21.5%">
+                  <input type="text" id="airlinelable"  class="form-control finalfontstyling text-center ml-0 pl-0 " value="${param.airlinename}" name="airlinename" readonly="readonly" style="max-width:21.5%;">
     
                  
                  
-                   <input type="text" id="dayz1"  class=" form-control  text-center  finalfontstyling finalmont12 text-top  p-0 pb-1 ml-4" name="depday"   value="${param.depday}"   style="width: 9%;" >
+                   <input type="text" id="dayz1"  class=" form-control  text-center  finalfontstyling finalmont12 text-top  p-0 pb-1 ml-4" name="depday"   value="${param.depday}"   style="max-width: 9%;" >
                    
                             
         
-         <input type="text" value="${param.deptime}" class=" form-control finalmont12 finalfontstylingbold text-center text-top p-0 pb-1"    name="deptime"  style="width:10.5%;" >
+         <input type="text" value="${param.deptime}" class=" form-control finalmont12 finalfontstylingbold text-center text-top p-0 pb-1"    name="deptime"  style="max-width:10.5%;" >
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -370,11 +346,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-     <input type="text" value= "${param.arrtime}"   class=" form-control  text-center finalfontstylingbold finalmont12  p-0 pb-1 text-top p-0"  name="arrtime"  style="width: 10.5%;">
+     <input type="text" value= "${param.arrtime}"   class=" form-control  text-center finalfontstylingbold finalmont12  p-0 pb-1 text-top p-0"  name="arrtime"  style="max-width:10.5%;">
          
            
                  
-                   <input type="text" id="dayz1"  class=" form-control finalfontstyling text-center finalmont12 text-top p-0"  class="form-control" name="arrday" value="${param.arrday}"   style="width:7%;" >
+                   <input type="text" id="dayz1"  class=" form-control finalfontstyling text-center finalmont12 text-top p-0"  class="form-control" name="arrday" value="${param.arrday}"   style="max-width:7%;" >
                    
                 
                      
@@ -407,23 +383,23 @@ if(session.getAttribute("ids")==null){
             
             <div class="col">
             
-            <div class ="form-group hummingrow" style="vertial-align:top">
+            <div class ="form-group hummingrow" style="vertial-align:top;">
             
            
             
-             <input type="text"  id="depmonth" class="   form-control finalmont12 finalfontstyling text-right text-top p-0  m-0   "   name="depmonth" value="${param.depmonth}" style="width:10.3%;" >
+             <input type="text"  id="depmonth" class="   form-control finalmont12 finalfontstyling text-right text-top p-0  m-0   "   name="depmonth" value="${param.depmonth}" style="max-width:10.3%;" >
             
-           <input type="text" id="gh"  name="depdate" class=" form-control text-left text-top p-0  finalfontstyling finalmont12 " value="${param.depdate}"   style="width: 7%;" >
+           <input type="text" id="gh"  name="depdate" class=" form-control text-left text-top p-0  finalfontstyling finalmont12 " value="${param.depdate}"   style="max-width: 7%;" >
            
-           		<input type="text"  class=" form-control  text-top  text-right p-0  finalmont12  finalfontstyling " name="depcode"  value="${param.depcode}" style="width:8%;" >
+           		<input type="text"  class=" form-control  text-top  text-right p-0  finalmont12  finalfontstyling " name="depcode"  value="${param.depcode}" style="max-width:8%;" >
            		
              <label class=" form-control  text-bottom text-right p-0  mont12" style="width: 16%;font-size:.8rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control  finalmont12  text-top text-center p-0 pl-2  finalfontstyling" name="descode" value="${param.descode}"   style="width: 15%;" >
+             <input type="text"  class=" form-control  finalmont12  text-top text-center p-0 pl-2  finalfontstyling" name="descode" value="${param.descode}"   style="max-width: 15%;" >
            		
-           		  <input type="text" class="  form-control align-text-top finalmont12 text-right p-0 pt-1  finalfontstyling " name="desmonth" value="${param.desmonth}"   style="width: 8%;" >
+           		  <input type="text" class="  form-control align-text-top finalmont12 text-right p-0 pt-1  finalfontstyling " name="desmonth" value="${param.desmonth}"   style="max-width: 8%;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 pt-1 finalmont12 ml-0 finalfontstyling " name="desdate" value="${param.desdate}"  style="width: 8%;" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 pt-1 finalmont12 ml-0 finalfontstyling " name="desdate" value="${param.desdate}"  style="max-width: 8%;" >
             
        
       	
@@ -706,19 +682,6 @@ if(session.getAttribute("ids")==null){
  %>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     
     <div class="col-2 p-0 ml-2 m-0 ">
@@ -735,7 +698,7 @@ if(session.getAttribute("ids")==null){
 </div>
 <div class="col-1 p-0 m-0">
 
-            <hr  align="left" style="width:100%; border-color:black;"  class="pl-0 align-left" />
+            <hr  align="left" style="max-width:100%; border-color:black;"  class="pl-0 align-left" />
 
 </div>
                  
@@ -842,49 +805,13 @@ if(session.getAttribute("ids")==null){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
 
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         </section>
         
-        
-
-
-
-
-
-
 
 <div class="row">
 <div class="col">
@@ -937,11 +864,6 @@ if(session.getAttribute("ids")==null){
 
 
 </div> <!--  end passenger detail row -->
-
-
-
-
-
 
 
 
@@ -1017,37 +939,7 @@ if(session.getAttribute("ids")==null){
 </div> <!--  end passenger detail row -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!--  end passenger detail card -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="card d-lg-none d-md-none d-xl-none" >
 <div class="row">
@@ -1134,83 +1026,8 @@ if(session.getAttribute("ids")==null){
                           
                           
                           </div>
-                          
-
-             
-           
-          
-                  
-
-
-
-
-
-
-
-
+    
 </div> <!--  end passenger detail row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <div class="row mt-3  "> <!-- seats row -->
@@ -1328,13 +1145,6 @@ if(session.getAttribute("ids")==null){
 
 
 </div>
-
-
-
-
-
-
-
 
 
 
@@ -1785,11 +1595,6 @@ if(session.getAttribute("ids")==null){
         </script>  
         
        
-   
-        
-      
-        
-        
         
             <script>
  
@@ -5432,36 +5237,7 @@ var col1=document.getElementById('seat21J').style.backgroundColor;
             }
             
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            
-    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+       
             function getInfo(){
             	var k;
             	var g;
@@ -6044,65 +5820,6 @@ var k = setInterval(function(){
 
    
    
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-
 </div> <!-- collapse example  end-->
 
 </div> <!-- end card seat -->
@@ -6372,7 +6089,7 @@ var k = setInterval(function(){
       <div class="card-body">
       
      
-       <p style="display: inline-block"> I have a Promotional Code:</p> <input type="text" id="pro" name="promo" class="ml-4" style="display: inline-block">
+       <p style="display: inline-block;"> I have a Promotional Code:</p> <input type="text" id="pro" name="promo" class="ml-4" style="display: inline-block;">
        
      <input type="button" value="Apply" id="ap" class="btn default"  name="submit"  onclick="apply()" /> 
      
@@ -6473,10 +6190,6 @@ var k = setInterval(function(){
 
 
 </div>  <!--  final end price row  -->
-
-
-
-
 
 
 
@@ -6811,22 +6524,6 @@ var k = setInterval(function(){
 </div> <!-- end card -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="card mt-5">
 <div class="card-body">
 
@@ -6905,16 +6602,6 @@ var k = setInterval(function(){
 
 
 </div> <!-- end card -->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7155,7 +6842,7 @@ function handleKeyPress(e) {
                     
                     <div class="row">
                      <div class="col-12 align-content-center">
-                        <h6 class="pb-1 mb-0">Ahsan Airline 2019 © All Rights Reserved.</h6>
+                        <h6 class="pb-1 mb-0">Ahsan Airline 2019 Â© All Rights Reserved.</h6>
                      </div>
                         
                     </div>
