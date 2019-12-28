@@ -45,79 +45,73 @@ if(session.getAttribute("ids")==null){
 %>
 
 
-  <header>
+ <header>
+
+		<div id="header">
+
+			<nav class="navbar navbar-expand-md navbar-light navbar-expand-md ">
+
+
+				<a class="navbar-brand" href="index.jsp"> AHSAN AIRLINE <img
+					src="goldenlogoahsan.png" alt="logo">
+
+				</a>
+
+				<button data-toggle="collapse" data-target="#navbarToggler"
+					type="button" class="navbar-toggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--so as soon i enter below small size icon appear-->
+				<!--this bootom line is for data-target-->
+				<div class="collapse navbar-collapse" id="navbarToggler">
+
+
+
+
+
+					<ul class="navbar-nav">
+
+
+
+
+						<li class="nav-item dropdown">
+							<!--this anchortag will now play a role of the button
+            u can see in the website what i m talking about--> <a
+							class="nav-link  dropdown-toggle" data-toggle="dropdown"
+							role="button" href="#">Bookings</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="AllBookings.jsp">All Bookings</a>
+								<a class="dropdown-item " href="PreviousBookings.jsp">Previous
+									Bookings</a> <a class="dropdown-item " href="CurrentBookings.jsp">Current
+									Bookings</a>
+
+
+							</div>
+						</li>
+
+						<li class="nav-item"><a class="nav-link active" href="#">Choose
+								Flight</a></li>
+
+						<li class="nav-item"><a class="nav-link "
+							href="BookFlight.jsp">Book Flight</a></li>
+
+
+
+					</ul>
+
+
+
+				</div>
+
+
+
+			</nav>
+		</div>
+
+
+	</header>
+
            
-        <div id="header">
-          
-        <nav class="navbar navbar-expand-md navbar-light navbar-expand-md " >
-         
-            
-            <a class="navbar-brand" href="index.jsp"> AHSAN AIRLINE
-           
-               <img src="goldenlogoahsan.png" alt="logo">
-           
-           </a>
-                
-              <button data-toggle="collapse" data-target="#navbarToggler" type="button"
-       class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-         <!--so as soon i enter below small size icon appear-->
-       <!--this bootom line is for data-target-->
-       <div class="collapse navbar-collapse" id="navbarToggler">
-            
-            
-            
-            
-            
-            <ul class="navbar-nav">
-               
-                
-             
-                
-                    <li class="nav-item dropdown">
-            <!--this anchortag will now play a role of the button
-            u can see in the website what i m talking about-->
-            <a class="nav-link  dropdown-toggle" data-toggle="dropdown"  role="button"
-            href="#">Bookings</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="AllBookings.jsp">All Bookings</a>
-              <a class="dropdown-item " href="PreviousBookings.jsp">Previous Bookings</a>
-                  <a class="dropdown-item " href="CurrentBookings.jsp">Current Bookings</a>
-             
-
-            </div>
-        </li>
-                
-                <li class="nav-item">
-              <a class="nav-link active"  href="#">Choose Flight</a>
-              
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link "  href="BookFlight.jsp">Book Flight</a>
-                </li>
-                
-                
-                
-            </ul>
-           
-                    
-               
-       </div>    
-                
-                
-                
-            </nav>
-        </div>
-            
-        
-        </header>
-
-
-
-    
-
-        
-        
         
           <style>
         /* override Bootstrap's container */
@@ -156,7 +150,7 @@ if(session.getAttribute("ids")==null){
 
 
 
-<input type="text"  class=" form-control  text-left pr-0 fontstylingmobile" style="max-width:11.4rem" name="depcode" value="${requestScope.dcode} &#8594; ${requestScope.decode}  ${requestScope.day}
+<input type="text"  class=" form-control  text-left pr-0 fontstylingmobile" style="max-width:11.4rem;" name="depcode" value="${requestScope.dcode} &#8594; ${requestScope.decode}  ${requestScope.day}
 , ${requestScope.month}${requestScope.dat} &#124;" >
 
 </div>
@@ -164,7 +158,7 @@ if(session.getAttribute("ids")==null){
 
 
  
-          <label class= " text-left p-0 m-0 pt-2 fontstylingmobile" style="max-width:6rem">1 traveler</label>
+          <label class= " text-left p-0 m-0 pt-2 fontstylingmobile" style="max-width:6rem;">1 traveler</label>
 
  
       
@@ -232,11 +226,11 @@ if(session.getAttribute("ids")==null){
             
            
           
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
           
            
               
@@ -328,42 +322,11 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end row  end card-->
 
 
-
-
 </div> <!-- end entire 12 col mobile -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="container-fluid ml-0 pl-0 mr-0 pr-0">
 
@@ -378,26 +341,20 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
   
-  
-            
-           
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                       
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Pinterest Airline" name="airlinename"   >
           
                      <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput}  >
                 <input type="submit" id="totalsm2"  class="form-control float-right text-right mt-1 btn btn-info  btn-lg "  name="total" />  
-                
-                
-                
-                
-                
-                
+                                              
+                                 
 </div> <!-- end input -->
 </div> <!-- end mobile 1st col humming -->
 
@@ -471,37 +428,11 @@ if(session.getAttribute("ids")==null){
 
 </div> <!-- end row  end card-->
 
-
-
-
-
 </div> <!-- end entire 12 col mobile -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
-
-
-
-
-
-
 
 
 <div class="container-fluid ml-0 pl-0 mr-0 pr-0">
@@ -517,11 +448,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-        <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+        <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"   class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Stumble Airline" name="airlinename"   >
@@ -608,36 +539,12 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end row  end card-->
 
 
-
-
 </div> <!-- end entire 12 col mobile -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
-
-
-
-
-
-
-
 
 <div class="container-fluid ml-0 pl-0 mr-0 pr-0">
 
@@ -652,11 +559,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Star Airline" name="airlinename"   >
@@ -748,28 +655,9 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end entire 12 col mobile -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
-
-
-
-
 
 
 
@@ -787,11 +675,11 @@ if(session.getAttribute("ids")==null){
   <div class="input-group">
             
            
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Crown Airline" name="airlinename"   >
@@ -884,21 +772,6 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end entire 12 col mobile -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -921,11 +794,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-             <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+             <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Diamond Airline" name="airlinename"   >
@@ -1018,20 +891,6 @@ if(session.getAttribute("ids")==null){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -1052,11 +911,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
           
            
               
@@ -1147,22 +1006,6 @@ if(session.getAttribute("ids")==null){
 
 </div> <!-- end entire 12 col mobile -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -1181,11 +1024,11 @@ if(session.getAttribute("ids")==null){
 <div class="col">
 
   <div class="input-group">
-             <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+             <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
            
           
               
@@ -1279,20 +1122,6 @@ if(session.getAttribute("ids")==null){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -1312,11 +1141,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Dolphin Airline" name="airlinename"   >
           
                      <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput}  >
@@ -1401,25 +1230,7 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end row  end card-->
 
 
-
-
 </div> <!-- end entire 12 col mobile -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div> <!-- end of entire 12 row -->
 
@@ -1438,11 +1249,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-          <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+          <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >  
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >  
        
            
               
@@ -1536,19 +1347,6 @@ if(session.getAttribute("ids")==null){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -1569,11 +1367,11 @@ if(session.getAttribute("ids")==null){
 
   <div class="input-group">
             
-           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem" >
+           <input type="text" id="dayz" hidden="hidden" class="dayz form-control fontstyling dayz" name="depday"   value= ${requestScope.day}   style="width: 4.2rem;" >
  
-   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem" >
+   <input type="text"  id="depmonth" hidden="hidden" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${requestScope.month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem" >
+           <input type="text" id="gh" hidden="hidden" class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${requestScope.dat}  style="width: 2.8rem;" >
            
               
           <input type="text" id="airlinelable"  class="form-control  m-0 p-0 mt-1 pt-3 text-bottom mobileairlinename "  value="Dots Airline" name="airlinename"   >
@@ -1664,21 +1462,6 @@ if(session.getAttribute("ids")==null){
 </div> <!-- end entire 12 col mobil -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div> <!-- end of entire 12 row -->
 
 </div> <!--  end of entire container -->
@@ -1689,22 +1472,6 @@ if(session.getAttribute("ids")==null){
 
 
 <section >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1749,10 +1516,10 @@ if(session.getAttribute("ids")==null){
               <div class="form-inline">
   <div class="form-group" >
   
-    <input  type="date" class="form-control"  name="dates" id="da" value=${dateinput} style="max-width:200px"  >
+    <input  type="date" class="form-control"  name="dates" id="da" value=${dateinput} style="max-width:200px;"  >
     
    
-    <select class="form-control travelersfield" name="" id="" style="max-width:148px">
+    <select class="form-control travelersfield" name="" id="" style="max-width:148px;">
                   <option selected>Travelers</option> 
                   <option>1</option>
                   
@@ -1767,7 +1534,7 @@ if(session.getAttribute("ids")==null){
            
            <div class="form-group text-center mt-2">
          
-  <button type="button" style="width:200px" onclick="setdetails();day()" class="   btn btn-primary   ">Submit</button>
+  <button type="button" style="width:200px;" onclick="setdetails();day()" class="   btn btn-primary   ">Submit</button>
             </div>
                 </form>
                 
@@ -1806,13 +1573,13 @@ if(session.getAttribute("ids")==null){
          
       
   
-           <input type="image"  class="img-fluid " src="graphs2.png" alt="Yearly Price Trend" style="vertical-align:bottom"/>
+           <input type="image"  class="img-fluid " src="graphs2.png" alt="Yearly Price Trend" style="vertical-align:bottom;"/>
          
         <div class="form-group mb-0 ">
         
         <span class="ml-5 pl-3 text-center" style="color:orange; font-weight:bold;"  id="amit"> </span> 
        
-         <input type="email" id="subscribe" class="form-control input-lg  ml-0  ml-lg-5 " placeholder="Enter your email" style="max-width:250px">
+         <input type="email" id="subscribe" class="form-control input-lg  ml-0  ml-lg-5 " placeholder="Enter your email" style="max-width:250px;">
      </div>
       
      
@@ -1872,7 +1639,7 @@ if(session.getAttribute("ids")==null){
         <input type="hidden" value="Washington-Dulles IAD" name="fl" />
 
           
-             <input type="image"  class="img-fluid " src="DCs.jpg" alt="Washington DC" style="vertical-align:bottom"/>
+             <input type="image"  class="img-fluid " src="DCs.jpg" alt="Washington DC" style="vertical-align:bottom;"/>
              
                <div class="bottom-left">United States</div>
                
@@ -1911,7 +1678,7 @@ if(session.getAttribute("ids")==null){
           <div class="dullescontainer">
         <input type="hidden" value="Paris-Charles De Gaulle CDG" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="paris.jpg" alt="Paris" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="paris.jpg" alt="Paris" style="vertical-align:bottom;"/>
         
     
          <div class="bottom-left">France</div>
@@ -1956,7 +1723,7 @@ if(session.getAttribute("ids")==null){
         
    
       
-            <input type="image"  class="img-fluid" name="flys" src="peru2.jpg" alt="Peru" style="vertical-align:bottom"/>
+            <input type="image"  class="img-fluid" name="flys" src="peru2.jpg" alt="Peru" style="vertical-align:bottom;"/>
     
          <div class="bottom-left">Peru</div>
                
@@ -2000,7 +1767,7 @@ if(session.getAttribute("ids")==null){
          
             <input type="hidden" value="Ontario Int'l ONT" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="canada2.jpg" alt="Canada" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="canada2.jpg" alt="Canada" style="vertical-align:bottom;"/>
        
          
          <div class="bottom-left">Canada</div>
@@ -2086,7 +1853,7 @@ if(session.getAttribute("ids")==null){
          
             <input type="hidden" value="Abu Dhabi AUH" name="fl" />
         
-         <input type="image"  class="img-fluid pr-0 mr-0 img-right" name="flys" src="uae2.jpg" alt="UAE" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid pr-0 mr-0 img-right" name="flys" src="uae2.jpg" alt="UAE" style="vertical-align:bottom;"/>
        
        
          <div class="bottom-left">UAE</div>
@@ -2127,7 +1894,7 @@ if(session.getAttribute("ids")==null){
     
             <input type="hidden" value="Venice-Aeroporto Marco Polo VCE" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="italy2.jpg" alt="Italy" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="italy2.jpg" alt="Italy" style="vertical-align:bottom;"/>
          
          
          
@@ -2174,7 +1941,7 @@ if(session.getAttribute("ids")==null){
          
             <input type="hidden" value="Beijing-Capital PEK" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="china2.jpg" alt="China" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="china2.jpg" alt="China" style="vertical-align:bottom;"/>
          
          
          
@@ -2219,7 +1986,7 @@ if(session.getAttribute("ids")==null){
          
             <input type="hidden" value="Berlin-Schonefeld SXF" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="germany2.jpg" alt="Germany" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="germany2.jpg" alt="Germany" style="vertical-align:bottom;"/>
          
          
          <div class="bottom-left">Germany</div>
@@ -2260,7 +2027,7 @@ if(session.getAttribute("ids")==null){
     
             <input type="hidden" value="Delhi-Indira Ghandi DEL" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="india2.jpg" alt="India" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="india2.jpg" alt="India" style="vertical-align:bottom;"/>
          
          
          <div class="bottom-left">India</div>
@@ -2306,7 +2073,7 @@ if(session.getAttribute("ids")==null){
        
             <input type="hidden" value="Islamabad ISB" name="fl" />
         
-         <input type="image"  class="img-fluid" name="flys" src="pakistan2.jpg" alt="Pakistan" style="vertical-align:bottom"/>
+         <input type="image"  class="img-fluid" name="flys" src="pakistan2.jpg" alt="Pakistan" style="vertical-align:bottom;"/>
          
          
          
@@ -2363,7 +2130,7 @@ if(session.getAttribute("ids")==null){
 
 <label class="" id="myDivheadline1">Comparing prices to find a better deal...</label>
 
- <img id = "myDiv" src = "goldenlogo.png" /> 
+ <img id = "myDiv" src = "goldenlogoahsan.png" /> 
   <img id = "myDiv1" src = "icons8-pinterest-72.png" /> 
    
 
@@ -2438,57 +2205,9 @@ if(session.getAttribute("ids")==null){
 </div>
      
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+          
             
             </div><!-- end of table row -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -2542,13 +2261,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="hummingbird-72.png"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Humming Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Humming Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class="dayz form-control fontstyling" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class="dayz form-control fontstyling" name="depday"   value=${day}   style="width: 4.2rem;" >
         
-         <input type="text"  id="time" name="deptime"  class="form-control p-0 mont12 mr-1 fontstyling"  style="width: 4.2rem">
+         <input type="text"  id="time" name="deptime"  class="form-control p-0 mont12 mr-1 fontstyling"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -2556,7 +2275,7 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time2" class=" form-control  p-0 fontstyling"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time2" class=" form-control  p-0 fontstyling"  name="arrtime"  style="width: 5.5rem;">
          
            
            
@@ -2604,13 +2323,6 @@ if(session.getAttribute("ids")==null){
             
             
             
-            
-            
-            
-            
-            
-            
-            
          <!--   </div>   -->
             
          
@@ -2627,19 +2339,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right pt-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right pt-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control   pt-0 text-top pl-2 fontstyling mont12" name="descode" value=${decode}  style="width: 4.5rem" >
+             <input type="text"  class=" form-control   pt-0 text-top pl-2 fontstyling mont12" name="descode" value=${decode}  style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control p-0  text-top  text-right mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control p-0  text-top  text-right mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control p-0  text-top  text-left   mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control p-0  text-top  text-left   mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -2668,7 +2380,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -2689,23 +2401,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of humming card body-->
             </div>  <!-- end of humming  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -2758,13 +2453,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="icons8-pinterest-72.png" alt="pinterest air"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Pinterest Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Pinterest Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
                    
-                            <input type="text"  id="time3" name="deptime"  class="form-control  fontstyling text-left p-0 mont12 mr-1"  style="width: 4.2rem">
+                            <input type="text"  id="time3" name="deptime"  class="form-control  fontstyling text-left p-0 mont12 mr-1"  style="width: 4.2rem;">
         
         
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
@@ -2774,11 +2469,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time4" class=" form-control  text-center fontstyling mont12 text-top p-0"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time4" class=" form-control  text-center fontstyling mont12 text-top p-0"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -2843,19 +2538,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right align-text-top pt-0  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right align-text-top pt-0  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
              <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2  fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2  fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0 fontstyling mont12 monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0 fontstyling mont12 monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0  ml-0 fontstyling mont12 desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0  ml-0 fontstyling mont12 desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -2884,7 +2579,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -2907,21 +2602,6 @@ if(session.getAttribute("ids")==null){
             </div>  <!-- end of pineterest  card -->
             
             
-            
-            
-             
-
-            
-           
-           
-            
-        
-          
-          
-          
-          
-          
-      
      
             <!--  this is stumble -->
             
@@ -2971,13 +2651,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="stumbl-72.png" alt="stumble airline"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Stumble Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Stumble Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
         
-         <input type="text"  id="time5" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem">
+         <input type="text"  id="time5" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -2985,11 +2665,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time6" class=" form-control  p-0 fontstyling mont12 text-top text-center"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time6" class=" form-control  p-0 fontstyling mont12 text-top text-center"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -3038,16 +2718,6 @@ if(session.getAttribute("ids")==null){
           
        <!--    </div>    -->
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
          <!--   </div>   -->
             
          
@@ -3064,19 +2734,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right p-0 align-text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right p-0 align-text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}  style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}  style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -3105,7 +2775,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -3126,24 +2796,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of stumble card body-->
             </div>  <!-- end of stumble  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -3195,13 +2847,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="star-72.png" alt="Star Airline"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Star Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Star Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
         
-         <input type="text"  id="time7" name="deptime"  class="form-control mr-1 fontstyling p-0 mont12"  style="width: 4.2rem">
+         <input type="text"  id="time7" name="deptime"  class="form-control mr-1 fontstyling p-0 mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -3209,11 +2861,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time8" class=" form-control    p-0 fontstyling text-center mont12"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time8" class=" form-control    p-0 fontstyling text-center mont12"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -3242,19 +2894,7 @@ if(session.getAttribute("ids")==null){
                  <input type="text" id="totals4"  class="form-control  p-0 pl-1 mb-1 text-left m-0 mont12 fontstylingprice" name="total" style="width: 4.6rem;font-size:16px;"  >
                 
             
-                         
-                              
-                 
-                  
-
-
- 
-                
-               
-                
-                
-                
-                
+            
                 
           </div> <!--   -->
           </div>
@@ -3268,16 +2908,7 @@ if(session.getAttribute("ids")==null){
           
        <!--    </div>    -->
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+          
          <!--   </div>   -->
             
          
@@ -3294,19 +2925,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}  style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}  style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right align-text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right align-text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -3335,7 +2966,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -3356,18 +2987,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of star card body-->
             </div>  <!-- end of star  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
               <!--  this is crown -->
@@ -3418,13 +3037,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="crowns.png" alt="Crown Air"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Crown Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Crown Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class="dayz form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
         
-         <input type="text"  id="time9" name="deptime"  class="form-control mr-1 fontstyling p-0 text-left mont12"  style="width: 4.2rem">
+         <input type="text"  id="time9" name="deptime"  class="form-control mr-1 fontstyling p-0 text-left mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -3432,11 +3051,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time10" class="daya form-control    fontstyling p-0 text-center mont12"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time10" class="daya form-control    fontstyling p-0 text-center mont12"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -3481,15 +3100,6 @@ if(session.getAttribute("ids")==null){
        <!--    </div>    -->
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
          <!--   </div>   -->
             
          
@@ -3506,32 +3116,25 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}  style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}  style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right align-text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right align-text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
                  
                
             </div>
-            
-            
-            
-          
-            
-            
-            
             
             
             </div>
@@ -3547,7 +3150,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -3568,20 +3171,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of crown card body-->
             </div>  <!-- end of crown  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
               <!--  this is diamond -->
@@ -3619,26 +3208,19 @@ if(session.getAttribute("ids")==null){
             
             <div class="col">
             
-            
-            
-            
-            
-            
-            
-         
           <div class="form-group">
               <div class="form-inline ">
               <!--   <img src="hummingbird-72.png" alt="media air">  -->
           
               <input type="image"  name="flys" src="diamond.png" alt="Diamond Air"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Diamond Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Diamond Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
         
-         <input type="text"  id="time11" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem">
+         <input type="text"  id="time11" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -3646,11 +3228,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time12" class="daya form-control   text-center p-0 mont12 fontstyling"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time12" class="daya form-control   text-center p-0 mont12 fontstyling"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class="dayz form-control fontstyling"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class="dayz form-control fontstyling"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -3688,16 +3270,6 @@ if(session.getAttribute("ids")==null){
           
        <!--    </div>    -->
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
          <!--   </div>   -->
             
          
@@ -3714,31 +3286,25 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right p-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right p-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   p-0 text-top pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   p-0 text-top pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
                  
                
             </div>
-            
-            
-            
-          
-            
-            
             
             
             
@@ -3755,7 +3321,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -3776,18 +3342,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of humming card body-->
             </div>  <!-- end of humming  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -3826,12 +3380,6 @@ if(session.getAttribute("ids")==null){
             
             <div class="col">
             
-            
-            
-            
-            
-            
-            
          
           <div class="form-group">
               <div class="form-inline ">
@@ -3839,13 +3387,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="travel.png" alt="Travel Air"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Travel Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Travel Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
         
-         <input type="text"  id="time13" name="deptime"  class="form-control p-0 text-left fontstyling mont12 mr-1" style="width: 4.2rem">
+         <input type="text"  id="time13" name="deptime"  class="form-control p-0 text-left fontstyling mont12 mr-1" style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -3853,11 +3401,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time14" class=" form-control  p-0  text-center mont12 fontstyling"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time14" class=" form-control  p-0  text-center mont12 fontstyling"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -3881,14 +3429,6 @@ if(session.getAttribute("ids")==null){
               <input type="text" id="totals7"  class="form-control  p-0 pl-1 mb-1 text-left m-0 mont12 fontstylingprice" name="total" style="width: 4.6rem;font-size:16px;"  >     
                 
                 
-                
-    
-  
-                 
-                          
-        
- 
-              
                  
           </div> <!--   -->
           </div>
@@ -3901,15 +3441,6 @@ if(session.getAttribute("ids")==null){
           </div> <!-- end of 2nd form-group -->
           
        <!--    </div>    -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
          <!--   </div>   -->
@@ -3928,19 +3459,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
              <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   align-text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control align-text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control align-text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -3969,7 +3500,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -3990,26 +3521,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of travel card body-->
             </div>  <!-- end of travel  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -4062,13 +3573,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="bunny.png" alt="Bunny air"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Bunny Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Bunny Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
         
-         <input type="text"  id="time15" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem">
+         <input type="text"  id="time15" name="deptime"  class="form-control mr-1 fontstyling text-left p-0 mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -4076,11 +3587,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time16" class="daya form-control  mont12 pl-0 p-0 text-center  fontstyling"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time16" class="daya form-control  mont12 pl-0 p-0 text-center  fontstyling"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -4106,17 +3617,7 @@ if(session.getAttribute("ids")==null){
               <input type="text" id="totals8"  class="form-control  p-0 pl-1 mb-1 text-left m-0 mont12 fontstylingprice" name="total" style="width: 4.6rem;font-size:16px;"  >       
                 
                 
-                
-                
-                
-                
-                
-                
-                
-           
-          
-                                        
-                          
+                         
           </div> <!--   -->
           </div>
             
@@ -4128,13 +3629,6 @@ if(session.getAttribute("ids")==null){
           </div> <!-- end of 2nd form-group -->
           
        <!--    </div>    -->
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -4155,19 +3649,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right p-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right p-0 text-top  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling" name="desdate desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling" name="desdate desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -4196,7 +3690,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -4217,21 +3711,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of bunny card body-->
             </div>  <!-- end of bunny  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -4287,11 +3766,11 @@ if(session.getAttribute("ids")==null){
               
                  <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Dolphin Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
         
-         <input type="text"  id="time17" name="deptime"  class="form-control p-0 mr-1 text-left fontstyling mont12"  style="width: 4.2rem">
+         <input type="text"  id="time17" name="deptime"  class="form-control p-0 mr-1 text-left fontstyling mont12"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -4299,11 +3778,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time18" class=" form-control  text-center pl-0 p-0 mont12 fontstyling"  name="arrtime" style="width: 5.5rem">
+                      <input type="text"  id="time18" class=" form-control  text-center pl-0 p-0 mont12 fontstyling"  name="arrtime" style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -4322,14 +3801,7 @@ if(session.getAttribute("ids")==null){
     <input type="text"  class="text-left text-top ml-1  pb-1 p-0  form-control  mont12  fontstyling"  value="(taxes) =" style="width: 3.9rem;" >  
               <input type="text" id="totals9"  class="form-control  p-0 pl-1 mb-1 text-left m-0 mont12 fontstylingprice" name="total" style="width: 4.6rem;font-size:16px;"  >        
                 
-                
-                
-                      
-                         
-                                               
-                         
-                 
-             
+               
                 
           </div> <!--   -->
           </div>
@@ -4342,14 +3814,6 @@ if(session.getAttribute("ids")==null){
           </div> <!-- end of 2nd form-group -->
           
        <!--    </div>    -->
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -4369,19 +3833,19 @@ if(session.getAttribute("ids")==null){
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}  style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right text-top p-0 pr-3  mont12 fontstyling" name="depcode" value=${dcode}  style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12  text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12  text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate " value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate " value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -4410,7 +3874,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -4431,31 +3895,6 @@ if(session.getAttribute("ids")==null){
             
             </div>   <!-- end of dolphin card body-->
             </div>  <!-- end of dolphin  card -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             
@@ -4510,13 +3949,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="lion.png" alt="Lion's Airline"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Lion's Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Lion's Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}  style="width: 4.2rem;" >
         
-         <input type="text"  id="time19" name="deptime"  class="form-control mr-1 mont12 fontstyling p-0  text-left"  style="width: 4.2rem">
+         <input type="text"  id="time19" name="deptime"  class="form-control mr-1 mont12 fontstyling p-0  text-left"  style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -4524,11 +3963,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time20" class="daya form-control    pl-0 p-0 text-center mont12 fontstyling"  name="arrtime" style="width: 5.5rem">
+                      <input type="text"  id="time20" class="daya form-control    pl-0 p-0 text-center mont12 fontstyling"  name="arrtime" style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}  style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}  style="width: 4rem;" >
                    
                 
                      
@@ -4594,23 +4033,23 @@ if(session.getAttribute("ids")==null){
             
             <div class="col">
             
-            <div class ="form-group hummingrow" style="vertial-align:top">
+            <div class ="form-group hummingrow" style="vertial-align:top;">
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  text-top p-0 fontstyling month12"   name="depmonth" value=${month}  style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right text-top  pr-3 p-0 mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right text-top  pr-3 p-0 mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   text-top p-0 pl-2 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem" >
+           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}   style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -4639,7 +4078,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -4663,36 +4102,7 @@ if(session.getAttribute("ids")==null){
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+           
             
               <!--  this is dots -->
             
@@ -4742,13 +4152,13 @@ if(session.getAttribute("ids")==null){
           
               <input type="image"  name="flys" src="dots.png" alt="Dots Airline"/>
               
-                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Dots Airline" name="airlinename" readonly="readonly" style="width: 8.4rem">
+                 <input type="text" id="airlinelable"  class="form-control  m-0 p-0 fontstyling"  value="Dots Airline" name="airlinename" readonly="readonly" style="width: 8.4rem;">
                  
-                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem" >
+                  <input type="text"  hidden="hidden" class="hid form-control "  name="hid" value=${dateinput} style="width:4rem;" >
                   
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz" name="depday"   value=${day}   style="width: 4.2rem;" >
         
-         <input type="text"  id="time21" name="deptime"  class="form-control mr-1 p-0 mont12 fontstyling" style="width: 4.2rem">
+         <input type="text"  id="time21" name="deptime"  class="form-control mr-1 p-0 mont12 fontstyling" style="width: 4.2rem;">
         <!--     <input type="text" class="totaltime " id="totaltime" name="totaltime" value="yo" readonly="readonly" style="width:4.5rem"> --> 
         
       
@@ -4756,11 +4166,11 @@ if(session.getAttribute("ids")==null){
                <div class="liness   mt-1" ></div>  
                  
                  
-                      <input type="text"  id="time22" class="daya form-control  p-0 pl-0 fontstyling mont12"  name="arrtime"  style="width: 5.5rem">
+                      <input type="text"  id="time22" class="daya form-control  p-0 pl-0 fontstyling mont12"  name="arrtime"  style="width: 5.5rem;">
          
            
                  
-                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem" >
+                   <input type="text" id="dayz"  class=" form-control fontstyling dayz"  class="form-control" name="arrday" value=${day}   style="width: 4rem;" >
                    
                 
                      
@@ -4783,18 +4193,7 @@ if(session.getAttribute("ids")==null){
                 
             
                 
-                
-                
-                
-                
-               
-          
-        
-                    
-                 
-                
-                
-                 
+           
                        
           </div> <!--   -->
           </div>
@@ -4830,23 +4229,23 @@ if(session.getAttribute("ids")==null){
             
             <div class="col">
             
-            <div class ="form-group hummingrow" style="vertial-align:top">
+            <div class ="form-group hummingrow" style="vertial-align:top;">
             
            
             
-             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem" >
+             <input type="text"  id="depmonth" class=" mont12  form-control text-right  align-text-top p-0 fontstyling month12"   name="depmonth" value=${month} style="width: 3.5rem;" >
             
-           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem" >
+           <input type="text" id="gh"  class=" form-control text-left align-text-top p-0 mont12 fontstyling date1" name="depdate" value=${dat}   style="width: 2.8rem;" >
            
-           		<input type="text"  class=" form-control text-right  p-0  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem" >
+           		<input type="text"  class=" form-control text-right  p-0  pr-3  mont12 fontstyling" name="depcode" value=${dcode}   style="width: 4.2rem;" >
            		
-             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem">Non Stop</label>	
+             <label class=" form-control ml-1 text-top  text-center p-0 mont12 fontstyling1" style="width: 5.9rem;">Non Stop</label>	
              
-             <input type="text"  class=" form-control mont12   align-text-top p-0 fontstyling" name="descode" value=${decode}   style="width: 4.5rem" >
+             <input type="text"  class=" form-control mont12   align-text-top p-0 fontstyling" name="descode" value=${decode}   style="width: 4.5rem;" >
            		
-           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem" >
+           		  <input type="text" class="  form-control text-top  text-right p-0  mont12 fontstyling monthdes" name="desmonth" value=${month}  style="width: 2.5rem;" >
             
-          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem" >
+          <input type="text" id="gh"  class=" form-control text-top  text-left p-0 mont12 fontstyling desdate" name="desdate" value=${dat}  style="width: 2rem;" >
             
        
       	
@@ -4875,7 +4274,7 @@ if(session.getAttribute("ids")==null){
             <div class="col">
             <div class="form-group float-right">
             
-            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px"> 
+            	 <input type="submit" value="SELECT" class=" bt btn btn-primary  form-control  mr-5" style="width:216px;"> 
             
             
             </div>
@@ -4932,52 +4331,8 @@ if(session.getAttribute("ids")==null){
 
 
 
-           
-
-
-
-
-
-
-
-
-
-
-
-
                     </section>
                     
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>
@@ -7610,7 +6965,7 @@ window.onload=dayofweek();
                     
                     <div class="row">
                      <div class="col-12 align-content-center">
-                        <h6 class="pb-1 mb-0">Ahsan Airline 2019 © All Rights Reserved.</h6>
+                        <h6 class="pb-1 mb-0">Ahsan Airline 2019 Â© All Rights Reserved.</h6>
                      </div>
                         
                     </div>
@@ -7685,31 +7040,6 @@ window.onload=dayofweek();
 
 
 
-
-
- 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
         <script type="text/javascript" src="JS/bootstrap.min.js"></script>
